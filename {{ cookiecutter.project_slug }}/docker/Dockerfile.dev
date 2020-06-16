@@ -3,7 +3,7 @@ FROM {{cookiecutter.project_slug}}-image-base
 COPY ./requirements_dev.txt /requirements_dev.txt
 RUN pip install -r /requirements_dev.txt
 
-ENV PATH $PATH:~/.local/bin
+ENV PATH $PATH:/home/docker/.local/bin
 WORKDIR /work
 
 ENTRYPOINT ["/bin/bash"]

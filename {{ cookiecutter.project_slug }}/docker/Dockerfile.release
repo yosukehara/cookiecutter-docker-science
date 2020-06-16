@@ -2,5 +2,5 @@ FROM {{cookiecutter.project_slug}}-image-base
 
 COPY . /work
 WORKDIR /work
-ENV PATH $PATH:~/.local/bin
+ENV PATH $PATH:/home/docker/.local/bin
 ENTRYPOINT ["/bin/bash"]
