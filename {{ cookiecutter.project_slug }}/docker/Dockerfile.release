@@ -2,5 +2,5 @@ FROM {{cookiecutter.project_slug}}-image-base
 
 COPY . /work
 WORKDIR /work
-
+ENV PATH $PATH:~/.local/bin
 ENTRYPOINT ["/bin/bash"]

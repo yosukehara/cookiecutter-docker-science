@@ -16,5 +16,6 @@ COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
 ARG UID
+ENV PATH $PATH:~/.local/bin
 RUN useradd docker -l -u $UID -s /bin/bash -m
 USER docker
