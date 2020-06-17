@@ -66,6 +66,7 @@ export DATA_SOURCE={{ cookiecutter.data_source }}
 export JUPYTER_HOST_PORT={{ cookiecutter.jupyter_host_port }}
 export JUPYTER_CONTAINER_PORT=8888
 export PYTHON=python3
+export PYTHON_VER=python{{ cookiecutter.python_version }}
 
 ###########################################################################################################
 ## ADD TARGETS SPECIFIC TO "{{ cookiecutter.project_name }}"

@@ -6,5 +6,6 @@
     "data_source_type": ["s3", "nfs", "url"],
     "data_source": "Please Input data source",
     "use_nvidia_docker": ["no", "yes"],
+    "python_version": ["3.6", "3.7", "3.8"],
     "formatter_type": ["black", "autopep8", "yapf"]
 }

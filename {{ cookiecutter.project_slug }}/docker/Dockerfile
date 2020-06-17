@@ -6,9 +6,9 @@ FROM ubuntu:18.04
 
 RUN apt-get update && apt-get install -y \
   git \
-  python3.7 \
+  python{{cookiecutter.python_version}} \
   python3-pip \
-  python3.7-dev \
+  python{{cookiecutter.python_version}}-dev \
   libhdf5-serial-dev \
   libhdf5-dev
 
