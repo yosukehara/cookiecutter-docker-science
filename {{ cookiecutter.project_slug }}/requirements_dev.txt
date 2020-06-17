@@ -7,7 +7,6 @@ dask
 dill
 flake8
 h5py
-hdf5
 ipywidgets
 ipympl
 jupyterlab
@@ -18,7 +17,7 @@ numpy
 pandas
 patsy
 protobuf
-pytables
+tables
 scikit-image
 scikit-learn
 scipy

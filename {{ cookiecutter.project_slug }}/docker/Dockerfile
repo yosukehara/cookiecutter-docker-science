@@ -8,7 +8,9 @@ RUN apt-get update && apt-get install -y \
   git \
   python3.7 \
   python3-pip \
-  python3.7-dev
+  python3.7-dev \
+  libhdf5-serial-dev \
+  libhdf5-dev
 
 RUN pip3 install --upgrade pip
 
