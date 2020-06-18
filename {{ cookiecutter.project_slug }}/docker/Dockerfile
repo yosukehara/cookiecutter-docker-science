@@ -1,8 +1,5 @@
 {%- if cookiecutter.use_nvidia_docker == 'yes' -%}
 FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
-{%- else -%}
-FROM ubuntu:18.04
-{%- endif %}
 
 RUN apt-get update && apt-get install -y \
   git \
@@ -11,6 +8,14 @@ RUN apt-get update && apt-get install -y \
   python{{cookiecutter.python_version}}-dev \
   libhdf5-serial-dev \
   libhdf5-dev
+{%- else -%}
+FROM python:{{cookiecutter.python_version}}
+
+RUN apt-get update && apt-get install -y \
+  git \
+  libhdf5-serial-dev \
+  libhdf5-dev
+{%- endif %}
 
 RUN pip3 install --upgrade pip
 

@@ -9,7 +9,6 @@ flake8
 h5py
 ipywidgets
 ipympl
-jupyterlab
 matplotlib
 numba
 numexpr
